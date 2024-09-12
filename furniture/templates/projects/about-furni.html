@@ -1,0 +1,106 @@
+{% extends 'main.html'%}
+{% load  static %}
+{% block content %}
+
+<div class="hero">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+                    <h1>About Us</h1>
+                    <p class="mb-4">At our furniture shop, we are committed to providing high-quality, thoughtfully designed pieces that blend comfort with style, helping you create spaces you'll love.</p>
+                    <p><a href="{% url 'shop'%}" class="btn btn-secondary me-2">Shop Now</a></p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap">
+                    <img src="{% static 'images/couch.png'%}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Hero Section -->
+
+
+
+<!-- Start Why Choose Us Section -->
+<div class="why-choose-section">
+<div class="container">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p>Choose us for our exceptional craftsmanship, high-quality materials, personalized service, and timeless designs that elevate your space.</p>
+
+            <div class="row my-5">
+                <div class="col-6 col-md-6">
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="{% static 'images/truck.svg'%}" alt="Image" class="imf-fluid">
+                        </div>
+                        <h3>Fast &amp; Free Shipping</h3>
+                        <p>Enjoy fast and free shipping on all orders, delivering your furniture quickly and conveniently to your doorstep.</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6">
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="{% static 'images/bag.svg'%}" alt="Image" class="imf-fluid">
+                        </div>
+                        <h3>Easy to Shop</h3>
+                        <p>Our seamless shopping experience ensures easy ordering and hassle-free shipping right to your home.</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6">
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="{% static 'images/support.svg'%}" alt="Image" class="imf-fluid">
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>We offer 24/7 customer support to assist you whenever you need help with your furniture shopping experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6">
+                    <div class="feature">
+                        <div class="icon">
+                            <img src="{% static 'images/return.svg'%}" alt="Image" class="imf-fluid">
+                        </div>
+                        <h3>Hassle Free Returns</h3>
+                        <p>Benefit from our hassle-free return support, making it easy to exchange or return items for your complete satisfaction.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="img-wrap">
+                <img src="{% static 'images/why-choose-us-img.jpg'%}" alt="Image" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- End Why Choose Us Section -->
+
+<!-- Start Team Section -->
+
+<!-- End Team Section -->
+
+
+
+<!-- Start Testimonial Slider -->
+
+<!-- End Testimonial Slider -->
+
+
+
+<!-- Start Footer Section -->
+
+<!-- End Footer Section -->	
+
+{% endblock content %}

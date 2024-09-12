@@ -1,0 +1,37 @@
+<!doctype html>
+{% load static  %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link href="{% static 'styles/bootstrap.min.css'%}" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="{% static 'styles/tiny-slider.css'%}" rel="stylesheet">
+		<link href="{% static 'styles/style.css'%}" rel="stylesheet">
+		<title>Furni Shop.</title>
+	</head>
+
+    <body>
+        {% include 'navbar.html '%}
+        {% block content%}
+        
+        {% endblock content%}
+        {% include 'footer.html'%}
+
+	</body>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/tiny-slider.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+    </html>
